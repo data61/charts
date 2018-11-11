@@ -16,6 +16,6 @@ entries:
     - https://github.com/n1analytics/anonlink
     - https://github.com/n1analytics/clkhash
     urls:
-    - https://n1analytics.github.com/charts/entity-service-1.8.tgz
+    - https://n1analytics.github.io/charts/entity-service-1.8.tgz
     version: "1.8"
 generated: 2018-11-12T09:50:41.750796+11:00
