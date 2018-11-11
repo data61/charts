@@ -13,10 +13,10 @@ Package each chart from the release tag of an upstream repository:
     
     mv linkage-service-x.y.z.tgz docs
 
-    helm repo index docs --url https://n1analytics.github.com/charts
+    helm repo index docs --url https://n1analytics.github.io/charts
     
 
 For users:
 
-    helm repo add n1charts https://n1analytics.github.com/charts
+    helm repo add n1charts https://n1analytics.github.io/charts
 
