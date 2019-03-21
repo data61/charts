@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   encoding-service:
-  - created: 2019-03-21T15:18:19.0252227+11:00
+  - created: 2019-03-21T17:12:21.1247392+11:00
     description: A service for encoding PII into CLKs.
     digest: 0aa3b310db8f4b08363f0bc24a6bb0b911f2696b1664b243be85369c018dd54b
     keywords:
@@ -18,8 +18,25 @@ entries:
     - https://n1analytics.github.io/charts/encoding-service-0.0.2.tgz
     version: 0.0.2
   entity-service:
+  - appVersion: 1.10.0
+    created: 2019-03-21T17:12:21.1267391+11:00
+    description: Privacy preserving record linkage service
+    digest: 6a46563e020d52d3f339cc1d083198967a326b0baa69cdf740731f9c11533ef5
+    icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
+    maintainers:
+    - email: support@n1analytics.com
+      name: N1 Analytics
+      url: https://n1analytics.com
+    name: entity-service
+    sources:
+    - https://github.com/n1analytics/entity-service
+    - https://github.com/n1analytics/anonlink
+    - https://github.com/n1analytics/clkhash
+    urls:
+    - https://n1analytics.github.io/charts/entity-service-1.10.0.tgz
+    version: 1.10.0
   - appVersion: 1.9.4
-    created: 2019-03-21T15:18:19.0426857+11:00
+    created: 2019-03-21T17:12:21.1357399+11:00
     description: Privacy preserving record linkage service
     digest: 83bca8687952e21e74f1d6014b235926cafb8303b95e7f6461453d94a3b6b72f
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -36,7 +53,7 @@ entries:
     - https://n1analytics.github.io/charts/entity-service-1.9.4.tgz
     version: 1.9.4
   - appVersion: 1.9.1
-    created: 2019-03-21T15:18:19.0401855+11:00
+    created: 2019-03-21T17:12:21.1327412+11:00
     description: Privacy preserving record linkage service
     digest: 0e0346d86276eec2f919e2913459f741ac25616225040eb035f977b65965373c
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -53,7 +70,7 @@ entries:
     - https://n1analytics.github.io/charts/entity-service-1.9.1.tgz
     version: 1.9.1
   - appVersion: 1.9.2
-    created: 2019-03-21T15:18:19.0512186+11:00
+    created: 2019-03-21T17:12:21.1387426+11:00
     description: Privacy preserving record linkage service
     digest: b470c91b4c6d7d32e5a89bbbcf898ee3ced2710060948ebeff8a11eac75fef59
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -70,7 +87,7 @@ entries:
     - https://n1analytics.github.io/charts/entity-service-1.9.tgz
     version: "1.9"
   - appVersion: 1.9.0
-    created: 2019-03-21T15:18:19.0331853+11:00
+    created: 2019-03-21T17:12:21.1297392+11:00
     description: Privacy preserving record linkage service
     digest: d0b02c77cb37d9caf350f0f231ed87b4e6a716ccbbc6cec06b8e2ab167552811
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -86,4 +103,4 @@ entries:
     urls:
     - https://n1analytics.github.io/charts/entity-service-1.8.tgz
     version: "1.8"
-generated: 2019-03-21T15:18:19.019183+11:00
+generated: 2019-03-21T17:12:21.1237385+11:00
