@@ -25,5 +25,5 @@ For users:
     
     helm repo update
     
-    helm install data61/anonlink [--values...]
+    helm install data61/entity-service [--values...]
 
