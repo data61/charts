@@ -1,7 +1,7 @@
 apiVersion: v1
 entries:
   encoding-service:
-  - created: 2019-07-13T16:10:53.1575778+10:00
+  - created: 2020-01-24T16:13:12.8771067+13:00
     description: A service for encoding PII into CLKs.
     digest: 0aa3b310db8f4b08363f0bc24a6bb0b911f2696b1664b243be85369c018dd54b
     keywords:
@@ -18,8 +18,26 @@ entries:
     - https://data61.github.io/charts/encoding-service-0.0.2.tgz
     version: 0.0.2
   entity-service:
+  - apiVersion: v1
+    appVersion: 1.12.0
+    created: 2020-01-24T16:13:12.9967896+13:00
+    description: Privacy preserving record linkage service
+    digest: dc0fce46ea838ccbd42b4a2fa583c5dab3b588cd86bb96a360558f18d14f370a
+    icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
+    maintainers:
+    - email: brian.thorne@data61.csiro.au
+      name: Brian Thorne
+      url: https://data61.csiro.au
+    name: entity-service
+    sources:
+    - https://github.com/data61/anonlink-entity-service
+    - https://github.com/data61/anonlink
+    - https://github.com/data61/clkhash
+    urls:
+    - https://data61.github.io/charts/entity-service-1.12.0.tgz
+    version: 1.12.0
   - appVersion: 1.11.1
-    created: 2019-07-13T16:10:53.166558+10:00
+    created: 2020-01-24T16:13:12.9808322+13:00
     description: Privacy preserving record linkage service
     digest: 6c0fd942e67659643084ef37332ff0ed4262febbea9ba80ef252529a8d93e19e
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -36,7 +54,7 @@ entries:
     - https://data61.github.io/charts/entity-service-1.11.1.tgz
     version: 1.11.1
   - appVersion: 1.11.0
-    created: 2019-07-13T16:10:53.1625586+10:00
+    created: 2020-01-24T16:13:12.9279729+13:00
     description: Privacy preserving record linkage service
     digest: 7de82f4f368d203e5faf0d80d469a10b3e5e39ed6606627df3b79700ddaf0bf8
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -53,7 +71,7 @@ entries:
     - https://data61.github.io/charts/entity-service-1.11.0.tgz
     version: 1.11.0
   - appVersion: 1.10.0
-    created: 2019-07-13T16:10:53.1595748+10:00
+    created: 2020-01-24T16:13:12.8980504+13:00
     description: Privacy preserving record linkage service
     digest: 6a46563e020d52d3f339cc1d083198967a326b0baa69cdf740731f9c11533ef5
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -70,7 +88,7 @@ entries:
     - https://data61.github.io/charts/entity-service-1.10.0.tgz
     version: 1.10.0
   - appVersion: 1.9.4
-    created: 2019-07-13T16:10:53.176563+10:00
+    created: 2020-01-24T16:13:13.0406755+13:00
     description: Privacy preserving record linkage service
     digest: 83bca8687952e21e74f1d6014b235926cafb8303b95e7f6461453d94a3b6b72f
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -87,7 +105,7 @@ entries:
     - https://data61.github.io/charts/entity-service-1.9.4.tgz
     version: 1.9.4
   - appVersion: 1.9.1
-    created: 2019-07-13T16:10:53.1725898+10:00
+    created: 2020-01-24T16:13:13.0227207+13:00
     description: Privacy preserving record linkage service
     digest: 0e0346d86276eec2f919e2913459f741ac25616225040eb035f977b65965373c
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -104,7 +122,7 @@ entries:
     - https://data61.github.io/charts/entity-service-1.9.1.tgz
     version: 1.9.1
   - appVersion: 1.9.2
-    created: 2019-07-13T16:10:53.1785556+10:00
+    created: 2020-01-24T16:13:13.05663+13:00
     description: Privacy preserving record linkage service
     digest: b470c91b4c6d7d32e5a89bbbcf898ee3ced2710060948ebeff8a11eac75fef59
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -121,7 +139,7 @@ entries:
     - https://data61.github.io/charts/entity-service-1.9.tgz
     version: "1.9"
   - appVersion: 1.9.0
-    created: 2019-07-13T16:10:53.1685594+10:00
+    created: 2020-01-24T16:13:13.0077601+13:00
     description: Privacy preserving record linkage service
     digest: d0b02c77cb37d9caf350f0f231ed87b4e6a716ccbbc6cec06b8e2ab167552811
     icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
@@ -137,4 +155,4 @@ entries:
     urls:
     - https://data61.github.io/charts/entity-service-1.8.tgz
     version: "1.8"
-generated: 2019-07-13T16:10:53.1565611+10:00
+generated: 2020-01-24T16:13:12.8711226+13:00
