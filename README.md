@@ -10,8 +10,8 @@ This repository has been configured in github to serve the `docs` folder.
 
 Package each chart from the release tag of an upstream repository:
 
-    helm package anonlink
-    mv anonlink-x.y.z.tgz docs
+    helm package entity-service
+    mv entity-service-x.y.z.tgz docs
 
 Update the index:
 
