@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   encoding-service:
   - apiVersion: v1
-    created: "2020-06-15T14:33:26.052244+10:00"
+    created: "2020-06-15T21:56:25.740835+10:00"
     dependencies:
     - condition: provision.postgresql
       name: postgresql
@@ -25,8 +25,38 @@ entries:
     version: 0.0.2
   entity-service:
   - apiVersion: v1
+    appVersion: 1.13.0
+    created: "2020-06-15T21:56:25.791722+10:00"
+    dependencies:
+    - condition: provision.redis
+      name: redis-ha
+      repository: https://kubernetes-charts.storage.googleapis.com
+      version: 4.4.1
+    - condition: provision.minio
+      name: minio
+      repository: https://kubernetes-charts.storage.googleapis.com
+      version: 5.0.27
+    - condition: provision.postgresql
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.9.1
+    description: Privacy preserving record linkage service
+    digest: bd384dfa66c78c00bf1d040b09e87658d88968975cc0c314d4dd1b52b6995fff
+    icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
+    maintainers:
+    - name: Confidential Computing
+      url: https://data61.csiro.au
+    name: entity-service
+    sources:
+    - https://github.com/data61/anonlink-entity-service
+    - https://github.com/data61/anonlink
+    - https://github.com/data61/clkhash
+    urls:
+    - https://data61.github.io/charts/entity-service-1.13.3.tgz
+    version: 1.13.3
+  - apiVersion: v1
     appVersion: 1.13.0-beta.3
-    created: "2020-06-15T14:33:26.089959+10:00"
+    created: "2020-06-15T21:56:25.782151+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -56,7 +86,7 @@ entries:
     version: 1.13.2
   - apiVersion: v1
     appVersion: 1.13.0-beta2
-    created: "2020-06-15T14:33:26.08187+10:00"
+    created: "2020-06-15T21:56:25.772689+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -87,7 +117,7 @@ entries:
     version: 1.13.1
   - apiVersion: v1
     appVersion: 1.12.0
-    created: "2020-06-15T14:33:26.074562+10:00"
+    created: "2020-06-15T21:56:25.765419+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -118,7 +148,7 @@ entries:
     version: 1.12.0
   - apiVersion: v1
     appVersion: 1.11.1
-    created: "2020-06-15T14:33:26.068742+10:00"
+    created: "2020-06-15T21:56:25.757454+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -149,7 +179,7 @@ entries:
     version: 1.11.1
   - apiVersion: v1
     appVersion: 1.11.0
-    created: "2020-06-15T14:33:26.062625+10:00"
+    created: "2020-06-15T21:56:25.752128+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -180,7 +210,7 @@ entries:
     version: 1.11.0
   - apiVersion: v1
     appVersion: 1.10.0
-    created: "2020-06-15T14:33:26.057853+10:00"
+    created: "2020-06-15T21:56:25.745455+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -211,7 +241,7 @@ entries:
     version: 1.10.0
   - apiVersion: v1
     appVersion: 1.9.4
-    created: "2020-06-15T14:33:26.104299+10:00"
+    created: "2020-06-15T21:56:25.808835+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -242,7 +272,7 @@ entries:
     version: 1.9.4
   - apiVersion: v1
     appVersion: 1.9.1
-    created: "2020-06-15T14:33:26.098644+10:00"
+    created: "2020-06-15T21:56:25.802745+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -273,7 +303,7 @@ entries:
     version: 1.9.1
   - apiVersion: v1
     appVersion: 1.9.2
-    created: "2020-06-15T14:33:26.108203+10:00"
+    created: "2020-06-15T21:56:25.81363+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -304,7 +334,7 @@ entries:
     version: "1.9"
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2020-06-15T14:33:26.09387+10:00"
+    created: "2020-06-15T21:56:25.796912+10:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -333,4 +363,4 @@ entries:
     urls:
     - https://data61.github.io/charts/entity-service-1.8.tgz
     version: "1.8"
-generated: "2020-06-15T14:33:26.049682+10:00"
+generated: "2020-06-15T21:56:25.735174+10:00"
