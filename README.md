@@ -14,7 +14,6 @@ See [chart repository documentation](https://github.com/helm/helm/blob/master/do
     helm install data61/entity-service [--values...]
 
 
-
 ## How this repo works
 
 This repository has been configured in github to serve the `docs` folder.
