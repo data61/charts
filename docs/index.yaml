@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   encoding-service:
   - apiVersion: v1
-    created: "2021-02-22T12:05:48.710898247+13:00"
+    created: "2021-07-23T12:08:15.833216513+12:00"
     dependencies:
     - condition: provision.postgresql
       name: postgresql
@@ -25,8 +25,39 @@ entries:
     version: 0.0.2
   entity-service:
   - apiVersion: v2
+    appVersion: 1.14.0
+    created: "2021-07-23T12:08:15.879954494+12:00"
+    dependencies:
+    - condition: provision.redis
+      name: redis-ha
+      repository: https://dandydeveloper.github.io/charts
+      version: 4.10.5
+    - condition: provision.minio
+      name: minio
+      repository: https://helm.min.io/
+      version: 8.0.10
+    - condition: provision.postgresql
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.9.1
+    description: Privacy preserving record linkage service
+    digest: a5e7aa76e8210c626cc6c19853f1f7cbed47c09f357dd793d90af00d63e87a45
+    icon: https://s3-us-west-2.amazonaws.com/slack-files2/avatars/2016-04-11/33560836053_df0d62a81bf32f53df00_72.png
+    maintainers:
+    - name: Confidential Computing
+      url: https://data61.csiro.au
+    name: entity-service
+    sources:
+    - https://github.com/data61/anonlink-entity-service
+    - https://github.com/data61/anonlink
+    - https://github.com/data61/clkhash
+    type: application
+    urls:
+    - https://data61.github.io/charts/entity-service-1.14.0.tgz
+    version: 1.14.0
+  - apiVersion: v2
     appVersion: 1.13.0
-    created: "2021-02-22T12:05:48.77688356+13:00"
+    created: "2021-07-23T12:08:15.874118169+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -57,7 +88,7 @@ entries:
     version: 1.13.4
   - apiVersion: v1
     appVersion: 1.13.0
-    created: "2021-02-22T12:05:48.770084161+13:00"
+    created: "2021-07-23T12:08:15.869237236+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -87,7 +118,7 @@ entries:
     version: 1.13.3
   - apiVersion: v1
     appVersion: 1.13.0-beta.3
-    created: "2021-02-22T12:05:48.75602088+13:00"
+    created: "2021-07-23T12:08:15.865172511+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -117,7 +148,7 @@ entries:
     version: 1.13.2
   - apiVersion: v1
     appVersion: 1.13.0-beta2
-    created: "2021-02-22T12:05:48.739112613+13:00"
+    created: "2021-07-23T12:08:15.860452928+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -148,7 +179,7 @@ entries:
     version: 1.13.1
   - apiVersion: v1
     appVersion: 1.12.0
-    created: "2021-02-22T12:05:48.730225432+13:00"
+    created: "2021-07-23T12:08:15.85359315+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -179,7 +210,7 @@ entries:
     version: 1.12.0
   - apiVersion: v1
     appVersion: 1.11.1
-    created: "2021-02-22T12:05:48.726328109+13:00"
+    created: "2021-07-23T12:08:15.850182395+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -210,7 +241,7 @@ entries:
     version: 1.11.1
   - apiVersion: v1
     appVersion: 1.11.0
-    created: "2021-02-22T12:05:48.722993523+13:00"
+    created: "2021-07-23T12:08:15.846310695+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -241,7 +272,7 @@ entries:
     version: 1.11.0
   - apiVersion: v1
     appVersion: 1.10.0
-    created: "2021-02-22T12:05:48.716357513+13:00"
+    created: "2021-07-23T12:08:15.842792372+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -272,7 +303,7 @@ entries:
     version: 1.10.0
   - apiVersion: v1
     appVersion: 1.9.4
-    created: "2021-02-22T12:05:48.789718177+13:00"
+    created: "2021-07-23T12:08:15.886889152+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -303,7 +334,7 @@ entries:
     version: 1.9.4
   - apiVersion: v1
     appVersion: 1.9.1
-    created: "2021-02-22T12:05:48.786537009+13:00"
+    created: "2021-07-23T12:08:15.884608805+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -334,7 +365,7 @@ entries:
     version: 1.9.1
   - apiVersion: v1
     appVersion: 1.9.2
-    created: "2021-02-22T12:05:48.792451945+13:00"
+    created: "2021-07-23T12:08:15.888778017+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -365,7 +396,7 @@ entries:
     version: "1.9"
   - apiVersion: v1
     appVersion: 1.9.0
-    created: "2021-02-22T12:05:48.780860609+13:00"
+    created: "2021-07-23T12:08:15.881898102+12:00"
     dependencies:
     - condition: provision.redis
       name: redis-ha
@@ -394,4 +425,4 @@ entries:
     urls:
     - https://data61.github.io/charts/entity-service-1.8.tgz
     version: "1.8"
-generated: "2021-02-22T12:05:48.694434514+13:00"
+generated: "2021-07-23T12:08:15.832365039+12:00"
